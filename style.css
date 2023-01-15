@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+    background-image: url("imagens/isaac-newton.jpg");
+    background-position: center;
+    background-size: cover;
+    color: bisque;
+}
+
+h1 {
+    color: #966F33;
+}
+
+#painel {
+    /* Define o tema de Fundo do Paínel */
+    background-color: rgb(134, 112, 84);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* Ajusta a Borda do Painel*/
+    border: 2px solid grey;
+    padding: 2%;
+    border-radius: 4%;
+}

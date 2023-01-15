@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora Força Gravitacional</title>
+        <link rel="stylesheet" href="./style.css">
+        <!--Ferramenta Web que possibilita a utilização de fórmulas matemáticas em HTML-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+
+        <h1>Calculadora Força Gravitacional</h1>
+
+        <div id="painel">
+            <h2>Lei da Atração dos Corpos</h2>
+
+            <p style="color: rgb(255, 242, 221)">Isaac Newton mostrou que dois corpos com massa sempre sofrem<br>
+               forças de ação e reação de natureza gravitacional e que a intensidade<br>
+               dessas forças são diretamente proporcionais ao produto das massas destes<br>
+               corpos, mas inversamente proporcionais à distância entre seus centros.<br><br>
+            
+               Estas conclusões o levaram a declarar a famosa Lei da Gravitação Universal,<br>
+               expressa matematicamente pela fórmula: 
+
+               \[F = G { {Mm} \over d^2}.\]
+               <br>
+               Abaixo você tem em mãos uma calculadora de intensidade de força gravitacional,<br>
+               teste como esta força se comporta para os diversos valores de massa e distância.<br>
+            </p>
+
+            <p>Massa Corpo A (m): <input class="variaveis" type="number" name="Massa_m" id="m"> kg</p>
+            <p>Massa Corpo B (M): <input class="variaveis" type="number" name="Massa_M" id="M"> kg</p>
+            <p>Distância Centros (d): <input class="variaveis" type="number" name="distancia" id="d"> m</p>
+            <button type="submit" value="calcular" onclick="calcular();">Calcular</button>
+
+            <div id="intensidade"></div>
+        </div>
+
+    </body>
+    <script src="./script.js"></script>
+</html>
